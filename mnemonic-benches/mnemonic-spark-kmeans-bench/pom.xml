@@ -33,11 +33,11 @@
   <packaging>jar</packaging>
 
   <properties>
-    <mode></mode>
-    <input></input>
-    <output></output>
+    <mode/>
+    <input/>
+    <output/>
     <spark.version>2.4.8</spark.version>
-    <scala.version>2.11.12</scala.version>
+    <scala.version>2.13.15</scala.version>
     <scala.binary.version>2.11</scala.binary.version>
     <scalatest.version>3.0.1</scalatest.version>
     <spark-scope>provided</spark-scope>
