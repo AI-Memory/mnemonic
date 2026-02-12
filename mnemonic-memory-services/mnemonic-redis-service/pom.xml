@@ -39,7 +39,7 @@
     <dependency>
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
-      <version>3.7.0</version>
+      <version>3.10.0</version>
     </dependency>
   </dependencies>
 
@@ -69,12 +69,12 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="src/main/native/build" />
+                <mkdir dir="src/main/native/build"/>
                 <exec dir="src/main/native/build" executable="cmake" failonerror="true">
-                  <arg value=".." />
+                  <arg value=".."/>
                 </exec>
                 <exec dir="src/main/native/build" executable="make" failonerror="true">
-                  <env key="JAVA_HOME" value="${java.home}/.." />
+                  <env key="JAVA_HOME" value="${java.home}/.."/>
                 </exec>
               </target>
             </configuration>
@@ -87,8 +87,8 @@
             </goals>
             <configuration>
               <target>
-                <delete dir="src/main/native/build" />
-                <delete dir="src/main/native/dist" />
+                <delete dir="src/main/native/build"/>
+                <delete dir="src/main/native/dist"/>
               </target>
             </configuration>
           </execution>
